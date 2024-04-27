@@ -1,0 +1,21 @@
+{
+    "name": "danielstoyanov/unit-testing-util",
+    "description": "A PHP Demo project showcasing modern PHP development practices, including robust unit testing with PHPUnit to ensure high-quality code and reliability.",
+    "type": "library",
+    "require": {
+        "phpunit/phpunit": "^11.0",
+        "monolog/monolog": "^3.5"
+    },
+    "license": "MIT License",
+    "autoload": {
+        "psr-4": {
+            "Danielstoyanov\\UnitTestingUtil\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Daniel Stoyanov"
+        }
+    ],
+    "minimum-stability": "stable"
+}

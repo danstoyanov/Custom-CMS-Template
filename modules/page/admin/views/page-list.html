@@ -1,0 +1,85 @@
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Projects</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active">Projects</li>
+                </ol>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+
+<!-- Main content -->
+<section class="content">
+    <!-- Default box -->
+    <div class="card">
+        <div class="card-body p-0">
+            <table class="table table-striped projects">
+                <thead>
+                <tr>
+                    <th style="width: 1%">
+                        #
+                    </th>
+                    <th style="width: 20%">
+                        Page Name
+                    </th>
+                    <th>
+                        <div class="d-flex justify-content-end">
+                            <form role="form" action="" method="post">
+                                <a class="btn btn-warning btn-sm" href="#">
+                                    <i class="fas fa-folder"></i> New page
+                                </a>
+
+                            </form>
+                        </div>
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <?php foreach ($pages as $page) { ?>
+                <tr>
+                    <td>
+                        <?= $page->id ?>
+                    </td>
+                    <td>
+                        <a>
+                            <?= $page->title ?>
+                        </a>
+                    </td>
+
+                    <!--                        ACTION BUTTONS-->
+                    <td class="project-actions text-right">
+                        <a class="btn btn-primary btn-sm" href="#">
+                            <i class="fas fa-folder">
+                            </i>
+                            View
+                        </a>
+                        <a class="btn btn-info btn-sm"
+                           href="/admin/index.php?module=page&amp;action=editPage&amp;id=<?= $page->id ?>">
+                            <i class="fas fa-pencil-alt">
+                            </i>
+                            Edit
+                        </a>
+                        <a class="btn btn-danger btn-sm" href="#">
+                            <form role="form" action="" method="post">
+                                <input type="hidden" name="delete" value="1"/>
+                                <input type="hidden" name="id" value="<?= $page->id ?>"/>
+                                Delete
+                            </form>
+                        </a>
+                    </td>
+                </tr>
+                <?php } ?>
+                </tbody>
+            </table>
+        </div>
+        <!-- /.card-body -->
+    </div>
+    <!-- /.card -->
+</section>

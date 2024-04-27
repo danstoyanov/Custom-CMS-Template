@@ -1,0 +1,14 @@
+// TODO ask about sessions!
+// TODO ask about extract function in PHP!
+// TODO Router concept at all.
+// TODO 👉 .htaccess  Must configure for the appache server to be used!
+// TODO -> make course summary at all and analyze the file!!!!
+
+// 🔥
+// TODO - SOS 👇
+// TODO - how to fix directories after PHP - 10 AbstractClass
+
+// TODO - when and how to change the project after tutorial and what can I do?
+// TODO  -> is there any reason to change it and make him more functional?
+// TODO -> 404 not found from the server msg!!!
+// TODO -> is it the project file are structured like here?
